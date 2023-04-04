@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+
+.modal-overlay {
+    display: none;
+}
+
+.open-modal {
+    display: inline-block;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.modal-container {
+    position: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+.parent .modal-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 598px;
+    height: 178px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    align-items: center;
+    
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.child{
+    position: relative;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.hero {
+    width: 600px;
+    height: 200px;
+    background-color: white;
+}
+
+.banner {
+    font-size: 30px;
+}
+
+.banner h1 {
+    margin: 10px;
+}
+
+.modal-background h3 {
+    font-size: 30px;
+}
+
+.btn {
+    position: relative;
+    left: 29%;
+    background-color: rgb(83, 183, 187); /* Green */
+    border: none;
+    color: white;
+    padding: 9px 43px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
